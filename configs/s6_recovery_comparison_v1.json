@@ -1,0 +1,39 @@
+{
+  "version": "S6_RECOVERY_COMPARISON_V1",
+  "conditions": [
+    "reset_only",
+    "fixed_retreat_open",
+    "AI_align",
+    "AI_grasp"
+  ],
+  "cpu_order": [
+    "fixed_retreat_open",
+    "AI_align",
+    "AI_grasp"
+  ],
+  "selected_episode_budget": 600,
+  "prefix_actions": 90,
+  "base_env_seed": 42,
+  "selected_env_seed": 51,
+  "policy_seed": 42,
+  "n_action_steps": 50,
+  "input_cap": 9000,
+  "output_cap": 32768,
+  "thinking_level": "HIGH",
+  "http_timeout_s": 900,
+  "outer_timeout_s": 1800,
+  "cleanup_margin_s": 30,
+  "common_generation_cap": 111,
+  "common_money_cap_micro": 4000000,
+  "profile_generations": 8,
+  "profile_money_cap_micro": 1000000,
+  "maximum_call_reservation_micro": 345680,
+  "ledger_baseline_bytes": 91956,
+  "ledger_baseline_sha256": "d9888b711a5340bbd21ec4d1bb6891423a2d300a67736f79bb99fb9062dd3290",
+  "source_run": "results/s5_eight_dev_baselines_goal9_v1/init9_n50",
+  "source_actions_sha256": "4a68b5e0a429e4d6cd6cec789747e5a7651a6b04be9e2a298a00aa670e272928",
+  "source_trace_sha256": "ce45c9e7829ccec405e41b31d1d7166d78197c3415c5e4d987bd574f28938370",
+  "prefix_replay_position_tolerance_m": 1e-06,
+  "prefix_replay_orientation_tolerance_rad": 1e-05,
+  "helper_target_GT_in_prompt": false
+}

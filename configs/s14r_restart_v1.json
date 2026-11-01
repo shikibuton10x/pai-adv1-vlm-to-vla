@@ -1,0 +1,25 @@
+{
+  "version": "S14R_CENTER_TEACHER_V1",
+  "common_generation_cap": 238,
+  "common_money_cap_micro": 5890146,
+  "generation_cap": 30,
+  "phase_money_cap_micro": 1000000,
+  "project_money_cap_micro": 10000000,
+  "ledger_baseline_bytes": 221066,
+  "ledger_baseline_sha256": "f3eefa35c01a530b5ef749930be12300790fdb380fb3b1383908adebcc211db4",
+  "ledger_baseline_generations": 208,
+  "terminal_reservation_id": "9913bf7f52d74aebaae88b5345416f34",
+  "terminal_request_hash": "76a7dd79b893b1eed64a3df180b1365a01582672a34426ab9d1f088c52c15d48",
+  "terminal_reserve_micro": 345680,
+  "terminal_evidence_sha256": {
+    "results/s14_center_teacher_live_v1/RESULT.json": "925b9c6c9044b2edf8cb275061584090080ea7146de135612650dc09411bd4c4",
+    "results/s14_center_teacher_live_v1_launch.json": "3a7a40726b89f3790c080a853dfbf87c90a50ba9a0452541ef7bfdc3e07beae1",
+    "results/s14_failure_summary_v1/PROVIDER_ERROR_AND_ACCOUNTING.json": "a7fc37c32074b607e3496bcc2ff92b7c4dbfeb4051d3dcdc9eb09d0d28b4fb12",
+    "results/s14_center_teacher_live_v1/requests/f15848a7794e48d89f1a555939960c60_request.json": "76a7dd79b893b1eed64a3df180b1365a01582672a34426ab9d1f088c52c15d48"
+  },
+  "old_result": "results/s14_center_teacher_live_v1/RESULT.json",
+  "old_launch_receipt": "results/s14_center_teacher_live_v1_launch.json",
+  "physical_config": "configs/s14_center_teacher_v1.json",
+  "new_out": "results/s14_center_teacher_live_v2",
+  "ledger_events_modified": false
+}

@@ -1,0 +1,59 @@
+{
+  "version": "S14D_APPROACH_CENTER_FROM800_V1",
+  "source_run": "results/s14c_center_teacher_live_v1",
+  "prefix_actions": 800,
+  "prefix_states": 801,
+  "new_placement_step_cap": 570,
+  "retreat_step_cap": 160,
+  "terminal_observation_steps": 100,
+  "maximum_including_settle": 1640,
+  "generation_cap": 30,
+  "phase_money_cap_micro": 1000000,
+  "common_generation_cap": 238,
+  "common_money_cap_micro": 5890146,
+  "project_money_cap_micro": 10000000,
+  "model": "gemini-4-argon",
+  "thinking_level": "MEDIUM",
+  "input_cap": 9000,
+  "output_cap": 32768,
+  "http_timeout_s": 900,
+  "outer_timeout_s": 3600,
+  "finish_reserve_s": 120,
+  "ledger_baseline_generations": 223,
+  "ledger_baseline_cost_micro": 4848354,
+  "source_hashes": {
+    "RESULT.json": "a051459a240ddba82a04f46f5ff3fbed399f279b7d9880b7e62092671718e693",
+    "trace.npz": "a30274322c575a28e8cba23dd866afc58fba0137a1499af76f49dbd6af07bdad",
+    "steps.jsonl": "2d068d3bb26a3fc086bdaddf15ce8c27391744832e9cf342a5aefbe4c7dd65ea",
+    "decisions.jsonl": "ee3cbfec5c0d142bd833d6faf6d4ee6215007109a2d9d9a012e21a1782db61fb",
+    "INITIAL_IDENTITY.json": "f9a9cb456684f6a9990e908eb256dc2b8649e923eafef38e133297a941f80cd0",
+    "BOUNDARY_INDEX.jsonl": "761d700a5fa73baae3ab79e4667147a0d1f4b311801b0f90c6dd363dfdbf9aa5"
+  },
+  "budget_phase": "S14R_CENTER_TEACHER_V1",
+  "contract_path": "docs/S14D_APPROACH_AND_LOWER_CONTRACT.md",
+  "human_instruction": "Updated human route instruction, replacing the earlier high horizontal-centering then vertical-descent plan: You are continuing at the human-selected checkpoint800, before reaching the desired placement position. Keep the restart EEF world-X position and orientation; do not add a new world-X shift to chase the bottle mouth or the wrist image center. Approach mainly in world negative Y while descending in world negative Z, so that the BOTTLE BASE reaches the center of the cabinet OUTER TOP near the end of the descent. Use the three current images to judge the approach and landing point. Do not first move over the center at a large height and then re-center sideways during lowering. Near the surface, use short, gentle downward moves, reobserve, and keep the gripper closed. If contact is unclear, use a cautious small downward move or a closed-gripper hold and inspect again, rather than opening over an air gap. The base should be supported by the top BEFORE you open. Once supported, open fully and retreat in world positive Z with horizontal position and orientation held. Request one operation and reobserve. No object coordinates, height-to-surface values, center-error scores, or future recorded actions are provided.",
+  "self_robot_anchor": {
+    "frame": "controlled EEF site / world",
+    "EEF_world_x_m": 0.019198256220755546,
+    "EEF_rotation_world": [
+      [
+        0.0018640578793310545,
+        0.9987480639008399,
+        -0.049988300056548134
+      ],
+      [
+        0.999988134339352,
+        -0.0020866926343689196,
+        -0.004401919393745016
+      ],
+      [
+        -0.00450071868948302,
+        -0.04997950147981327,
+        -0.998740102811089
+      ]
+    ],
+    "meaning": "Own robot state at checkpoint800; no object GT; human path instruction only, NOT controller override"
+  },
+  "expected_ledger_bytes": 240096,
+  "expected_ledger_sha256": "f4143f0ab25b76a4ad2353f3ee361ac3fb77326502987aebe5821d635b4ea85c"
+}

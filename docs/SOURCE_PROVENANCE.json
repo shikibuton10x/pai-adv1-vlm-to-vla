@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-31",
+  "sources": [
+    {
+      "source": "LOCAL_PATH_REQUIRED/safety.py",
+      "source_sha256": "b9705cab9dbc69eca96e078f48581370fded97d66621a160c0bfa48f1b372104",
+      "destination": "src/course_award/safety.py",
+      "changes": "Exact copy; thresholds unchanged.",
+      "license_status": "User-authorized local reuse. Research source has no per-file license header; prior project/public release describe own code as Apache-2.0. Publication provenance review still required."
+    },
+    {
+      "source": "LOCAL_PATH_REQUIRED/public_env.py",
+      "source_sha256": "78a4d47c8aede7f8e26ee504a83c5ef882c6bf9ed739bfd7a75979ffddf595bd",
+      "destination": "src/course_award/env.py",
+      "changes": "Adapted: explicit roots/output/cache; bounded reset; dual-history monitor; input/state validation.",
+      "license_status": "User-authorized local reuse. Research source has no per-file license header; prior project/public release describe own code as Apache-2.0. Publication provenance review still required."
+    },
+    {
+      "source": "LOCAL_PATH_REQUIRED/teacher_rules.py",
+      "source_sha256": "69cec9ef1e708d7cfff1e44beb977696928d33e69d4c2a107944fefa251cdbcd",
+      "destination": "src/course_award/control.py",
+      "changes": "Reference only: EEF pose and inverse OSC scaling; new bounded primitive implementation.",
+      "license_status": "User-authorized local reuse. Research source has no per-file license header; prior project/public release describe own code as Apache-2.0. Publication provenance review still required."
+    },
+    {
+      "source": "LOCAL_PATH_REQUIRED/display_orientation.py",
+      "source_sha256": "ecc38ac9c677b968189b92c8f8c1761a9a7f6a7992245c34e8cfabc4192b94bf",
+      "destination": "scripts/run_s0.py",
+      "changes": "Reference only: natural camera display is raw vertical flip; raw saved separately.",
+      "license_status": "User-authorized local reuse. Research source has no per-file license header; prior project/public release describe own code as Apache-2.0. Publication provenance review still required."
+    }
+  ],
+  "asset_license": "LIBERO code/assets source is read-only; MIT code license copied to licenses/LIBERO_MIT.txt. No model weights or demonstrations copied.",
+  "scope": "S0 local integration, no publication authorization",
+  "s1_new_code": {
+    "authorship": "New local implementation by course_implementer; no additional third-party source copied",
+    "paths": [
+      "src/course_award/budget.py",
+      "src/course_award/gemini.py",
+      "src/course_award/teacher_control.py",
+      "src/course_award/lift.py",
+      "src/course_award/observation.py",
+      "scripts/run_s1.py",
+      "scripts/launch_s1.py",
+      "tests/test_s1_contract.py"
+    ],
+    "references": [
+      "https://ai.google.dev/gemini-api/docs/generate-content/latest-model",
+      "https://ai.google.dev/api/tokens",
+      "https://ai.google.dev/gemini-api/docs/billing",
+      "https://discuss.ai.google.dev/t/gemini-api-counttokens/188451"
+    ],
+    "run_source_preservation": "Each S1 output has source_snapshot/MANIFEST.json and copies of the executed own source/configuration."
+  },
+  "diagnostic_new_code": {
+    "paths": [
+      "src/course_award/contact_diagnostic.py",
+      "src/course_award/resume.py",
+      "tests/test_s1_resume_diagnostic.py"
+    ],
+    "scope": "New local code. Fixed v2 state163 action replay, existing histories preserved; no new third-party source copied.",
+    "source_run_trace_sha256": "324389f97ca412d437a1d9259c3dbb37169a4dc49392fedc620b23a15326b6f3"
+  }
+}

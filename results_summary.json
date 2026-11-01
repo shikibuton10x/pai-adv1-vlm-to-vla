@@ -1,0 +1,46 @@
+{
+  "task": "libero_goal/task2/init0",
+  "scope": "development case studies; not generalization rates",
+  "S13": {
+    "assistance": "XY action701..817",
+    "assisted_steps": 117,
+    "target_contact_free_and_upright_observation_s": 5,
+    "assisted_task_complete": true,
+    "autonomous_end_to_end": false
+  },
+  "S16": {
+    "assistance": "Z action501..737",
+    "assisted_steps": 237,
+    "target_contact_free_and_upright_observation_s": 5,
+    "assisted_task_complete": true,
+    "autonomous_end_to_end": false,
+    "strict_quality_complete": false
+  },
+  "S0_n10": {
+    "autonomous_end_to_end": true,
+    "extra_ft": false
+  },
+  "S22": {
+    "updates": [
+      500,
+      1000,
+      2000
+    ],
+    "autonomous_end_to_end": [
+      false,
+      false,
+      false
+    ],
+    "one_continuous_training_run": true
+  },
+  "S23": {
+    "status": "NOT_STARTED_DEADLINE",
+    "main_training_updates": 0,
+    "new_policy_evaluations": 0,
+    "planned_training_updates": 1000,
+    "planned_lr_horizon": 2000,
+    "planned_peak_lr": 0.0001,
+    "text": "S23はS22/2000から学習率1e-4で追加1000更新する予定だったが、環境構築と重みの復元が予定した開始上限に間に合わず、学習を開始せず終了した。新規学習0更新・新規評価0本であり、モデルの失敗例や性能の比較結果には数えない。",
+    "video_conclusion": "位置・高さの補助で完了。無補助での改善は今後の課題。"
+  }
+}

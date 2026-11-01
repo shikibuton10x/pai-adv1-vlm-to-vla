@@ -1,0 +1,211 @@
+{
+  "budget_total": 600,
+  "settle_steps": 10,
+  "task": 9,
+  "policy_seed": 42,
+  "device": "cuda",
+  "use_amp": false,
+  "model": {
+    "repo_id": "lerobot/smolvla_libero",
+    "revision": "a24f1f380461b665158d52acd140152c79e8b36d",
+    "expected_file_count": 9,
+    "expected_decimal_gb_rounded": 0.907,
+    "local_directory": "checkpoints/smolvla_libero"
+  },
+  "backbone": {
+    "repo_id": "HuggingFaceTB/SmolVLM2-500M-Video-Instruct",
+    "revision": "7b375e1b73b11138ff12fe22c8f2822d8fe03467",
+    "runtime_file_count": 12,
+    "runtime_bytes": 2034845165
+  },
+  "runtime": {
+    "lerobot": "0.6.1",
+    "hf-libero": "0.1.4",
+    "robosuite": "1.4.0",
+    "mujoco": "3.8.1",
+    "torch": "2.8.0+cu128",
+    "torchvision": "0.23.0+cu128",
+    "numpy": "2.2.6"
+  },
+  "libero_revision": "8f1084e3132a39270c3a13ebe37270a43ece2a01",
+  "dataset_download": false,
+  "extra_api": false,
+  "gpu": {
+    "first_choice": "NVIDIA GeForce RTX 4090",
+    "cloud": "SECURE",
+    "hourly_gpu_usd": 0.89,
+    "initial_wall_limit_s": 7200,
+    "initial_spend_limit_usd": 3,
+    "container_disk_gb": 50,
+    "volume_disk_gb": 0,
+    "image": "runpod/pytorch:1.0.2-cu1281-torch280-ubuntu2404"
+  },
+  "input": {
+    "cameras": [
+      "agentview_image",
+      "robot0_eye_in_hand_image"
+    ],
+    "height": 360,
+    "width": 360,
+    "state_dim": 8,
+    "model_state_dim": 32,
+    "image_padding": 512,
+    "rename_map": {
+      "observation.images.image": "observation.images.camera1",
+      "observation.images.image2": "observation.images.camera2"
+    }
+  },
+  "per_cell_wall_limit_s": 900,
+  "wall_control": "external creation+100min work cutoff; creation+120min termination; <=60s polls",
+  "supplemental_dependencies": {
+    "typing-extensions": "4.16.0",
+    "tzdata": "2026.2"
+  },
+  "evaluation_profile": {
+    "version": "S4_RECEIVER_CONTACT_V1",
+    "target_object": "wine_bottle_1",
+    "receiver_object": "wine_rack_1",
+    "receiver_robot_contact": "record_only",
+    "receiver_translation_limit_mm": 3.0,
+    "tilt_limit_deg": 3.0,
+    "other_translation_limit_mm": 1.0,
+    "other_robot_contact": "stop",
+    "strict_diagnostic": "S3_NONTARGET_STRICT_CONTACT"
+  },
+  "version": "S5_EIGHT_DEV_BASELINES_V1",
+  "base_env_seed": 42,
+  "new_online_teacher_generations": 0,
+  "s4_config_sha256": "100514ddbfa4211e20cdd94b9d9d623efdcab61d1ddff2b5f06fc33600b6dcda",
+  "reference_init0": {
+    "path": "results/s4_receiver_four_cells_goal9_init0_v1/COMPARISON.json",
+    "sha256": "72a04fee376a3c71b9d07c8f59b22955733d9ef575c4ce063ca8ba8933e96921",
+    "pooled_with_s5": false,
+    "rerun": false
+  },
+  "g1_references": {
+    "4": {
+      "trace": "fixtures/s5_g1/libero_goal_a10/trace/task_09_episode_004.npz",
+      "trace_sha256": "3d814dcf8f046ad356edb22372c870c0b5efeee6bd14c1e75f791e35b0bac5fd",
+      "metadata": "fixtures/s5_g1/libero_goal_a10/trace/task_09_episode_004_metadata.json",
+      "metadata_sha256": "d51f3df78844e7ad54f1f781eb852fa77842b827cc6cdb0baf409034cb116414",
+      "pruned_init_sha256": "fa09aa4ade871c1c6be3dd8c93eb3437ea15190fd7dc73b8c986c8d2d3cfb062",
+      "row_sha256": "3a6fc8356805dc8d4a8bb2758d078ae197c59a415d891aae8674fb70365a9b1c"
+    },
+    "5": {
+      "trace": "fixtures/s5_g1/libero_goal_a10/trace/task_09_episode_005.npz",
+      "trace_sha256": "e8445e6bd9c16639bec6f24a3d9c517c48e71b6c4cb3b8caf9d5b97589898773",
+      "metadata": "fixtures/s5_g1/libero_goal_a10/trace/task_09_episode_005_metadata.json",
+      "metadata_sha256": "d51f3df78844e7ad54f1f781eb852fa77842b827cc6cdb0baf409034cb116414",
+      "pruned_init_sha256": "fa09aa4ade871c1c6be3dd8c93eb3437ea15190fd7dc73b8c986c8d2d3cfb062",
+      "row_sha256": "0ed1415086c068aaebf6950af176578ff484710fcab86e8afbb03ce59aceb14b"
+    },
+    "6": {
+      "trace": "fixtures/s5_g1/libero_goal_a10/trace/task_09_episode_006.npz",
+      "trace_sha256": "09b2059834b4cf3e463fc60c9fd35ad46c4f7032f323f6e50aed4d9c60efafde",
+      "metadata": "fixtures/s5_g1/libero_goal_a10/trace/task_09_episode_006_metadata.json",
+      "metadata_sha256": "d51f3df78844e7ad54f1f781eb852fa77842b827cc6cdb0baf409034cb116414",
+      "pruned_init_sha256": "fa09aa4ade871c1c6be3dd8c93eb3437ea15190fd7dc73b8c986c8d2d3cfb062",
+      "row_sha256": "793aa264763e2400b4c686355566d76f28b288c758636a557015838850979ef0"
+    },
+    "9": {
+      "trace": "fixtures/s5_g1/libero_goal_a10/trace/task_09_episode_009.npz",
+      "trace_sha256": "3c58c5a23f5ce9b7c5fb7f352088a2db33cc623f681c1e7642265ae410ddd87b",
+      "metadata": "fixtures/s5_g1/libero_goal_a10/trace/task_09_episode_009_metadata.json",
+      "metadata_sha256": "d51f3df78844e7ad54f1f781eb852fa77842b827cc6cdb0baf409034cb116414",
+      "pruned_init_sha256": "fa09aa4ade871c1c6be3dd8c93eb3437ea15190fd7dc73b8c986c8d2d3cfb062",
+      "row_sha256": "12052027bd25e261ce812a8776d79d805fe7eb8e820ee07f503a11aa14042e03"
+    }
+  },
+  "cells": [
+    {
+      "id": "init4_n10",
+      "init": 4,
+      "prefix": false,
+      "n_action_steps": 10,
+      "teacher_steps": 0,
+      "hold_steps": 0,
+      "student_steps": 590,
+      "teacher_hold_gate": "N/A"
+    },
+    {
+      "id": "init4_n50",
+      "init": 4,
+      "prefix": false,
+      "n_action_steps": 50,
+      "teacher_steps": 0,
+      "hold_steps": 0,
+      "student_steps": 590,
+      "teacher_hold_gate": "N/A"
+    },
+    {
+      "id": "init5_n10",
+      "init": 5,
+      "prefix": false,
+      "n_action_steps": 10,
+      "teacher_steps": 0,
+      "hold_steps": 0,
+      "student_steps": 590,
+      "teacher_hold_gate": "N/A"
+    },
+    {
+      "id": "init5_n50",
+      "init": 5,
+      "prefix": false,
+      "n_action_steps": 50,
+      "teacher_steps": 0,
+      "hold_steps": 0,
+      "student_steps": 590,
+      "teacher_hold_gate": "N/A"
+    },
+    {
+      "id": "init6_n10",
+      "init": 6,
+      "prefix": false,
+      "n_action_steps": 10,
+      "teacher_steps": 0,
+      "hold_steps": 0,
+      "student_steps": 590,
+      "teacher_hold_gate": "N/A"
+    },
+    {
+      "id": "init6_n50",
+      "init": 6,
+      "prefix": false,
+      "n_action_steps": 50,
+      "teacher_steps": 0,
+      "hold_steps": 0,
+      "student_steps": 590,
+      "teacher_hold_gate": "N/A"
+    },
+    {
+      "id": "init9_n10",
+      "init": 9,
+      "prefix": false,
+      "n_action_steps": 10,
+      "teacher_steps": 0,
+      "hold_steps": 0,
+      "student_steps": 590,
+      "teacher_hold_gate": "N/A"
+    },
+    {
+      "id": "init9_n50",
+      "init": 9,
+      "prefix": false,
+      "n_action_steps": 50,
+      "teacher_steps": 0,
+      "hold_steps": 0,
+      "student_steps": 590,
+      "teacher_hold_gate": "N/A"
+    }
+  ],
+  "cell_order": [
+    "init4_n10",
+    "init4_n50",
+    "init5_n10",
+    "init5_n50",
+    "init6_n10",
+    "init6_n50",
+    "init9_n10",
+    "init9_n50"
+  ]
+}

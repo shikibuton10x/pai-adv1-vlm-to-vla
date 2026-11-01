@@ -1,0 +1,78 @@
+{
+  "tag": "v0.6.1",
+  "source": "official Hugging Face LeRobot repository via GitHub connector",
+  "files": {
+    "src/lerobot/processor/normalize_processor.py": {
+      "url": "https://github.com/huggingface/lerobot/blob/v0.6.1/src/lerobot/processor/normalize_processor.py",
+      "sha256": "f0cd88bec4c954a93ba1cc90300473b96eb177762789c1780cf07801fc1af9d6",
+      "license": "Apache-2.0; original file header retained",
+      "purpose": "read-only pinned API reference; not installed or imported"
+    },
+    "src/lerobot/processor/env_processor.py": {
+      "url": "https://github.com/huggingface/lerobot/blob/v0.6.1/src/lerobot/processor/env_processor.py",
+      "sha256": "41cf74048b233652b2b03d38c79b30d6f1d341592d553a5625f971de555f3a3a",
+      "license": "Apache-2.0; original file header retained",
+      "purpose": "read-only pinned API reference; not installed or imported"
+    },
+    "src/lerobot/optim/schedulers.py": {
+      "url": "https://github.com/huggingface/lerobot/blob/v0.6.1/src/lerobot/optim/schedulers.py",
+      "sha256": "05d57770348fbb3f412f52804a8d0f015f8128a37c55d5ce8ed9af6ed8522bc9",
+      "license": "Apache-2.0; original file header retained",
+      "purpose": "read-only pinned API reference; not installed or imported"
+    },
+    "src/lerobot/policies/pretrained.py": {
+      "url": "https://github.com/huggingface/lerobot/blob/v0.6.1/src/lerobot/policies/pretrained.py",
+      "sha256": "09274e852673cd5d3b45d21d1c669ff5c200a29466b5eb64b5ac0dbad8d4b5ca",
+      "license": "Apache-2.0; original file header retained",
+      "purpose": "read-only pinned API reference; not installed or imported"
+    },
+    "src/lerobot/policies/factory.py": {
+      "url": "https://github.com/huggingface/lerobot/blob/v0.6.1/src/lerobot/policies/factory.py",
+      "sha256": "af515f27ffff6c7420f5ef445349e9bf73af161ef62f2477dd35dd95b8cd23bd",
+      "license": "Apache-2.0; original file header retained",
+      "purpose": "read-only pinned API reference; not installed or imported"
+    },
+    "src/lerobot/envs/factory.py": {
+      "url": "https://github.com/huggingface/lerobot/blob/v0.6.1/src/lerobot/envs/factory.py",
+      "sha256": "920fa600589b6e9a62e0240efa6a03301a955c54e0ce1a4a06ea59e7391ef299",
+      "license": "Apache-2.0; original file header retained",
+      "purpose": "read-only pinned API reference; not installed or imported"
+    },
+    "src/lerobot/envs/utils.py": {
+      "url": "https://github.com/huggingface/lerobot/blob/v0.6.1/src/lerobot/envs/utils.py",
+      "sha256": "4a37ce5d9ac70a22f88e63c02b84ef3e30be72725e52fe6a03ec7e3407c143e7",
+      "license": "Apache-2.0; original file header retained",
+      "purpose": "read-only pinned API reference; not installed or imported"
+    },
+    "src/lerobot/envs/libero.py": {
+      "url": "https://github.com/huggingface/lerobot/blob/v0.6.1/src/lerobot/envs/libero.py",
+      "sha256": "97c984f12331527626812ec19967ef399e545535b3571becf044db2417ae9d71",
+      "license": "Apache-2.0; original file header retained",
+      "purpose": "read-only pinned API reference; not installed or imported"
+    },
+    "src/lerobot/policies/smolvla/smolvlm_with_expert.py": {
+      "url": "https://github.com/huggingface/lerobot/blob/v0.6.1/src/lerobot/policies/smolvla/smolvlm_with_expert.py",
+      "sha256": "996d3b0c713c0ed42b383aa2cf89b2e6f9868e337747c480a64adaecdc1073cf",
+      "license": "Apache-2.0; original file header retained",
+      "purpose": "read-only pinned API reference; not installed or imported"
+    },
+    "src/lerobot/policies/smolvla/processor_smolvla.py": {
+      "url": "https://github.com/huggingface/lerobot/blob/v0.6.1/src/lerobot/policies/smolvla/processor_smolvla.py",
+      "sha256": "b28e31c7b97c564edc6ad1aabe451fb59931b406ff7a6ed1fdff9d1af365d7ec",
+      "license": "Apache-2.0; original file header retained",
+      "purpose": "read-only pinned API reference; not installed or imported"
+    },
+    "src/lerobot/policies/smolvla/configuration_smolvla.py": {
+      "url": "https://github.com/huggingface/lerobot/blob/v0.6.1/src/lerobot/policies/smolvla/configuration_smolvla.py",
+      "sha256": "2fb637cb428fa2fdf1d114646dcffaf4728216bfe5b7039d5d0cac4857ffc4e0",
+      "license": "Apache-2.0; original file header retained",
+      "purpose": "read-only pinned API reference; not installed or imported"
+    },
+    "src/lerobot/policies/smolvla/modeling_smolvla.py": {
+      "url": "https://github.com/huggingface/lerobot/blob/v0.6.1/src/lerobot/policies/smolvla/modeling_smolvla.py",
+      "sha256": "37b1d56f37510732a087cf5c32c05cd15d6234201a3f002f108ec4c53438cc7d",
+      "license": "Apache-2.0; original file header retained",
+      "purpose": "read-only pinned API reference; not installed or imported"
+    }
+  }
+}

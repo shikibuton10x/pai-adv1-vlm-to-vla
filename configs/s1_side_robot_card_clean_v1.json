@@ -1,0 +1,20 @@
+{
+  "variant": "S1_SIDE_CARD_FRESH_CLEAN_V1",
+  "history_operations": 4,
+  "additional_generation_cap": 20,
+  "common_generation_cap": 49,
+  "common_money_cap_usd": 1.5,
+  "input_cap": 8000,
+  "thinking_plus_visible_cap": 4096,
+  "thinking_level": "MEDIUM",
+  "http_timeout_s": 90,
+  "current_cameras": [
+    "agentview",
+    "robot0_eye_in_hand",
+    "sideview"
+  ],
+  "past_reference": false,
+  "fresh_initial": true,
+  "quality_gate": "normal",
+  "history_seed": "empty_current_episode"
+}

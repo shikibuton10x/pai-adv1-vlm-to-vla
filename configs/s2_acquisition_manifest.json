@@ -1,0 +1,157 @@
+{
+  "policy": {
+    "repo": "lerobot/smolvla_libero",
+    "revision": "a24f1f380461b665158d52acd140152c79e8b36d",
+    "count": 9,
+    "bytes": 906741265,
+    "snapshot": ".cache/huggingface/hub/models--lerobot--smolvla_libero/snapshots/a24f1f380461b665158d52acd140152c79e8b36d",
+    "files": [
+      {
+        "file": ".gitattributes",
+        "bytes": 1519,
+        "sha256": "11ad7efa24975ee4b0c3c3a38ed18737f0658a5f75a0a96787b576a78a023361",
+        "path": ".cache/huggingface/hub/models--lerobot--smolvla_libero/snapshots/a24f1f380461b665158d52acd140152c79e8b36d/.gitattributes"
+      },
+      {
+        "file": "README.md",
+        "bytes": 1686,
+        "sha256": "a20b9db396342b7c37a07125c619266289831ac9fa7b3c759ff7239d2b4362a6",
+        "path": ".cache/huggingface/hub/models--lerobot--smolvla_libero/snapshots/a24f1f380461b665158d52acd140152c79e8b36d/README.md"
+      },
+      {
+        "file": "config.json",
+        "bytes": 2241,
+        "sha256": "3ed3ed80ee077d94ff22942130642bb60e255443ee65da676bc88ab1684a7efe",
+        "path": ".cache/huggingface/hub/models--lerobot--smolvla_libero/snapshots/a24f1f380461b665158d52acd140152c79e8b36d/config.json"
+      },
+      {
+        "file": "model.safetensors",
+        "bytes": 906712520,
+        "sha256": "9a9f6413e42c0f332fccbce9a0dc796af2790f82cf002f791cdbf7e01e1afca8",
+        "path": ".cache/huggingface/hub/models--lerobot--smolvla_libero/snapshots/a24f1f380461b665158d52acd140152c79e8b36d/model.safetensors"
+      },
+      {
+        "file": "policy_postprocessor.json",
+        "bytes": 660,
+        "sha256": "3b51f092c70c710ce0213ee1b63bf51b4878ec67828dd2d67daf9ef51081a41a",
+        "path": ".cache/huggingface/hub/models--lerobot--smolvla_libero/snapshots/a24f1f380461b665158d52acd140152c79e8b36d/policy_postprocessor.json"
+      },
+      {
+        "file": "policy_postprocessor_step_0_unnormalizer_processor.safetensors",
+        "bytes": 5676,
+        "sha256": "b0cdde6e8a6f49a8e19eefb376728e47c09d3b3cc20ce3a97c45619fe7a732d9",
+        "path": ".cache/huggingface/hub/models--lerobot--smolvla_libero/snapshots/a24f1f380461b665158d52acd140152c79e8b36d/policy_postprocessor_step_0_unnormalizer_processor.safetensors"
+      },
+      {
+        "file": "policy_preprocessor.json",
+        "bytes": 1866,
+        "sha256": "7beef33479fc22c9a45670154b3c7b909fb6d51dac3cd6db6f23376638b4ac11",
+        "path": ".cache/huggingface/hub/models--lerobot--smolvla_libero/snapshots/a24f1f380461b665158d52acd140152c79e8b36d/policy_preprocessor.json"
+      },
+      {
+        "file": "policy_preprocessor_step_5_normalizer_processor.safetensors",
+        "bytes": 5676,
+        "sha256": "b0cdde6e8a6f49a8e19eefb376728e47c09d3b3cc20ce3a97c45619fe7a732d9",
+        "path": ".cache/huggingface/hub/models--lerobot--smolvla_libero/snapshots/a24f1f380461b665158d52acd140152c79e8b36d/policy_preprocessor_step_5_normalizer_processor.safetensors"
+      },
+      {
+        "file": "train_config.json",
+        "bytes": 9421,
+        "sha256": "88a2c5529157b24a1b3c870e7652311d2aaef2fc0126c9cdb179dd7d879a33b5",
+        "path": ".cache/huggingface/hub/models--lerobot--smolvla_libero/snapshots/a24f1f380461b665158d52acd140152c79e8b36d/train_config.json"
+      }
+    ],
+    "cache_main_resolution": "Explicit authorized immutable pin; evaluation must be offline"
+  },
+  "backbone": {
+    "repo": "HuggingFaceTB/SmolVLM2-500M-Video-Instruct",
+    "revision": "7b375e1b73b11138ff12fe22c8f2822d8fe03467",
+    "count": 12,
+    "bytes": 2034845165,
+    "snapshot": ".cache/huggingface/hub/models--HuggingFaceTB--SmolVLM2-500M-Video-Instruct/snapshots/7b375e1b73b11138ff12fe22c8f2822d8fe03467",
+    "files": [
+      {
+        "file": "added_tokens.json",
+        "bytes": 4739,
+        "sha256": "74135b8664b56088c0006f1c8e848d79a8eba003411f72ebf1dc2ee96227be3a",
+        "path": ".cache/huggingface/hub/models--HuggingFaceTB--SmolVLM2-500M-Video-Instruct/snapshots/7b375e1b73b11138ff12fe22c8f2822d8fe03467/added_tokens.json"
+      },
+      {
+        "file": "chat_template.json",
+        "bytes": 430,
+        "sha256": "b585e3598909a5687f9f9d738d35223724dedef256b9b274e1cbfb32b13c74bf",
+        "path": ".cache/huggingface/hub/models--HuggingFaceTB--SmolVLM2-500M-Video-Instruct/snapshots/7b375e1b73b11138ff12fe22c8f2822d8fe03467/chat_template.json"
+      },
+      {
+        "file": "config.json",
+        "bytes": 3767,
+        "sha256": "ea6bc1237e96247f6258de3e202e2e62b93d6f386dc47e7b36b5588bf3a15e17",
+        "path": ".cache/huggingface/hub/models--HuggingFaceTB--SmolVLM2-500M-Video-Instruct/snapshots/7b375e1b73b11138ff12fe22c8f2822d8fe03467/config.json"
+      },
+      {
+        "file": "generation_config.json",
+        "bytes": 136,
+        "sha256": "34835060c9f0f74d1acb456cc72ca32746d3843d9eb5f578f9cbffac1d2eb840",
+        "path": ".cache/huggingface/hub/models--HuggingFaceTB--SmolVLM2-500M-Video-Instruct/snapshots/7b375e1b73b11138ff12fe22c8f2822d8fe03467/generation_config.json"
+      },
+      {
+        "file": "merges.txt",
+        "bytes": 466391,
+        "sha256": "0b54e8aa4e53d5383e2e4bc635a56b43f9647f7b13832d5d9ecd8f82dac4f510",
+        "path": ".cache/huggingface/hub/models--HuggingFaceTB--SmolVLM2-500M-Video-Instruct/snapshots/7b375e1b73b11138ff12fe22c8f2822d8fe03467/merges.txt"
+      },
+      {
+        "file": "model.safetensors",
+        "bytes": 2029990624,
+        "sha256": "b9bfd456c9472c0acd5719d6e514c4b859891af205ee1a736552fd3497b8b0c3",
+        "path": ".cache/huggingface/hub/models--HuggingFaceTB--SmolVLM2-500M-Video-Instruct/snapshots/7b375e1b73b11138ff12fe22c8f2822d8fe03467/model.safetensors"
+      },
+      {
+        "file": "preprocessor_config.json",
+        "bytes": 599,
+        "sha256": "149e315d9410368e5491455bb06e0f763426e9e56cca731c13b24404a29b6374",
+        "path": ".cache/huggingface/hub/models--HuggingFaceTB--SmolVLM2-500M-Video-Instruct/snapshots/7b375e1b73b11138ff12fe22c8f2822d8fe03467/preprocessor_config.json"
+      },
+      {
+        "file": "processor_config.json",
+        "bytes": 67,
+        "sha256": "f3ad45028447b3562b4752be0d5916d6806c1ef589091a469608dcf0faa1737c",
+        "path": ".cache/huggingface/hub/models--HuggingFaceTB--SmolVLM2-500M-Video-Instruct/snapshots/7b375e1b73b11138ff12fe22c8f2822d8fe03467/processor_config.json"
+      },
+      {
+        "file": "special_tokens_map.json",
+        "bytes": 868,
+        "sha256": "2dfea2a426162316ff1567c82bc6d36d9690cd9f90455f075c77daca78b45c60",
+        "path": ".cache/huggingface/hub/models--HuggingFaceTB--SmolVLM2-500M-Video-Instruct/snapshots/7b375e1b73b11138ff12fe22c8f2822d8fe03467/special_tokens_map.json"
+      },
+      {
+        "file": "tokenizer.json",
+        "bytes": 3548256,
+        "sha256": "5ece781dc8d2b2f3e2f289ca0ae50b17cfc27dd27bfe7971bb8241e0b964331a",
+        "path": ".cache/huggingface/hub/models--HuggingFaceTB--SmolVLM2-500M-Video-Instruct/snapshots/7b375e1b73b11138ff12fe22c8f2822d8fe03467/tokenizer.json"
+      },
+      {
+        "file": "tokenizer_config.json",
+        "bytes": 28626,
+        "sha256": "dd9ce2ab89a3dd881bd9378f1a79b943a064b9275a7e1706d5b7b47b68977913",
+        "path": ".cache/huggingface/hub/models--HuggingFaceTB--SmolVLM2-500M-Video-Instruct/snapshots/7b375e1b73b11138ff12fe22c8f2822d8fe03467/tokenizer_config.json"
+      },
+      {
+        "file": "vocab.json",
+        "bytes": 800662,
+        "sha256": "82b84012e3add4d01d12ba14442026e49b8cbbaead1f79ecf3d919784f82dc79",
+        "path": ".cache/huggingface/hub/models--HuggingFaceTB--SmolVLM2-500M-Video-Instruct/snapshots/7b375e1b73b11138ff12fe22c8f2822d8fe03467/vocab.json"
+      }
+    ],
+    "cache_main_resolution": "Explicit authorized immutable pin; evaluation must be offline"
+  },
+  "LIBERO": {
+    "repo": "Lifelong-Robot-Learning/LIBERO",
+    "revision": "8f1084e3132a39270c3a13ebe37270a43ece2a01",
+    "verified_blobs": 1116,
+    "unpacked_bytes": 443644276,
+    "archive_bytes": 243454641,
+    "archive_sha256": "05ffcf8349b2e7ef31b038451253d76ca757debbf88c3a0c1de569ca38a80b14",
+    "destination": "third_party/LIBERO"
+  }
+}

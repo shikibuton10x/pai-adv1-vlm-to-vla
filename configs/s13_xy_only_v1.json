@@ -1,0 +1,32 @@
+{
+  "version": "S13_XY_ONLY_DIAGNOSTIC_V1",
+  "contract": "docs/S13_XY_ONLY_DIAGNOSTIC_CONTRACT.md",
+  "start_boundary": 700,
+  "first_assisted_action_1based": 701,
+  "goal_bottle_root_XY_m": [
+    0.07237351337108638,
+    -0.21131795894627167
+  ],
+  "XY_physical_norm_cap_m": 0.004,
+  "XY_error_tolerance_m": 0.002,
+  "max_assisted_actions": 160,
+  "minimum_entry_clearance_m": 0.03,
+  "end_on_first_cabinet_contact": true,
+  "end_on_bilateral_pad_loss": true,
+  "end_on_raw_open": false,
+  "policy_cap": 1180,
+  "terminal_observation_steps": 100,
+  "n_action_steps": 50,
+  "policy_seed": 42,
+  "new_API": 0,
+  "new_training": 0,
+  "fixed_cells": 1,
+  "resource": {
+    "max_minutes": 90,
+    "compute_minutes": 70,
+    "recovery_minutes": 20,
+    "max_USD": 2,
+    "cell_timeout_s": 900,
+    "preferred_datacenter": "EUR-IS-2"
+  }
+}

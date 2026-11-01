@@ -1,0 +1,18 @@
+{
+  "version": "S11_PERIODIC_NATIVE_V1",
+  "full_native_frames": "0 and every100; final repeated same-state render separately checked",
+  "every_boundary": [
+    "mjSTATE_INTEGRATION",
+    "model_geometry",
+    "geometry",
+    "camera restoration"
+  ],
+  "skipped_full_native": {
+    "native_state_exact": null,
+    "full_native_checked": false
+  },
+  "model_action_observation_physics_RNG_evaluation_changed": false,
+  "old_S0_results_retained": true,
+  "SM3_partial": "technical interruption; min completed-boundary/rawaction prefix must match before continuation; not independent retry",
+  "final_failure": "invalid state/result and nonzero exit; retain all evidence"
+}

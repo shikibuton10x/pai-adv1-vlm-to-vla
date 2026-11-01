@@ -1,0 +1,116 @@
+{
+  "model": {
+    "repo_id": "lerobot/smolvla_libero",
+    "revision": "a24f1f380461b665158d52acd140152c79e8b36d",
+    "expected_file_count": 9,
+    "expected_decimal_gb_rounded": 0.907,
+    "local_directory": "checkpoints/smolvla_libero"
+  },
+  "backbone": {
+    "repo_id": "HuggingFaceTB/SmolVLM2-500M-Video-Instruct",
+    "revision": "7b375e1b73b11138ff12fe22c8f2822d8fe03467",
+    "runtime_file_count": 12,
+    "runtime_bytes": 2034845165
+  },
+  "runtime": {
+    "lerobot": "0.6.1",
+    "hf-libero": "0.1.4",
+    "robosuite": "1.4.0",
+    "mujoco": "3.8.1",
+    "torch": "2.8.0+cu128",
+    "torchvision": "0.23.0+cu128",
+    "numpy": "2.2.6"
+  },
+  "libero_revision": "8f1084e3132a39270c3a13ebe37270a43ece2a01",
+  "device": "cuda",
+  "use_amp": false,
+  "input": {
+    "cameras": [
+      "agentview_image",
+      "robot0_eye_in_hand_image"
+    ],
+    "height": 360,
+    "width": 360,
+    "state_dim": 8,
+    "model_state_dim": 32,
+    "image_padding": 512,
+    "rename_map": {
+      "observation.images.image": "observation.images.camera1",
+      "observation.images.image2": "observation.images.camera2"
+    }
+  },
+  "gpu": {
+    "first_choice": "NVIDIA GeForce RTX 4090",
+    "cloud": "SECURE",
+    "hourly_gpu_usd": 0.89,
+    "initial_wall_limit_s": 7200,
+    "initial_spend_limit_usd": 3,
+    "container_disk_gb": 50,
+    "volume_disk_gb": 0,
+    "image": "runpod/pytorch:1.0.2-cu1281-torch280-ubuntu2404"
+  },
+  "supplemental_dependencies": {
+    "typing-extensions": "4.16.0",
+    "tzdata": "2026.2"
+  },
+  "version": "S8_CABINET_COMPARISON_V1",
+  "suite": "libero_goal",
+  "task_index": 2,
+  "task_name": "put_the_wine_bottle_on_top_of_the_cabinet",
+  "target": "wine_bottle_1",
+  "receiver": "wooden_cabinet_1",
+  "region": "wooden_cabinet_1_top_side",
+  "planned_inits": [
+    0,
+    1,
+    2
+  ],
+  "first_release_inits": [
+    0
+  ],
+  "base_env_seed": 42,
+  "policy_seed": 42,
+  "n_action_steps": 50,
+  "settle_steps": 10,
+  "policy_steps": 950,
+  "terminal_observation_steps": 40,
+  "total_physics_cap": 1000,
+  "observation_settling": 20,
+  "measurement_states": 21,
+  "measurement_seconds": 1,
+  "position_drift_m": 0.001,
+  "orientation_drift_deg": 3,
+  "drawer_limit_m": 0.003,
+  "evaluation_profile": {
+    "version": "S8_CABINET_RECEIVER_CONTACT_V1",
+    "target_object": "wine_bottle_1",
+    "receiver_object": "wooden_cabinet_1",
+    "receiver_robot_contact": "record_only",
+    "receiver_translation_limit_mm": 3.0,
+    "tilt_limit_deg": 3.0,
+    "other_translation_limit_mm": 1.0,
+    "other_robot_contact": "stop",
+    "strict_diagnostic": "S8_ALL_NONTARGET_CONTACT_STRICT_DIAGNOSTIC",
+    "scope": "named body roots; cabinet slide-joint changes, table and physics substeps are not primary pose checks"
+  },
+  "teacher": {
+    "model": "gemini-4-argon",
+    "thinking_level": "MEDIUM",
+    "input_cap": 9000,
+    "output_cap": 32768,
+    "http_timeout_s": 900,
+    "outer_timeout_s": 2700,
+    "save_reserve_s": 30,
+    "cell_generations": 24,
+    "cell_money_cap_micro": 1500000,
+    "stage_generations": 72,
+    "stage_money_cap_micro": 3000000,
+    "common_generation_cap": 193,
+    "common_money_cap_micro": 5905310,
+    "maximum_reservation_micro": 345680,
+    "ledger_baseline_bytes": 121792,
+    "ledger_baseline_sha256": "44eeff007afc2a968e87c04982a90ae399aa88be53652b800d26da5548a4e56d"
+  },
+  "student_wall_limit_s": 900,
+  "additional_initials_need_supervisor_start": true
+}

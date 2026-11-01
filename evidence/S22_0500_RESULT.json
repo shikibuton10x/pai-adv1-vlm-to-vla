@@ -1,0 +1,138 @@
+{
+  "version": "S22_S0_FULL_UNIFORM_2000_V1",
+  "actor": "SmolVLA_S22_u0500_n10",
+  "model_variant": "u0500",
+  "init": 0,
+  "new_teacher_calls": 0,
+  "training": false,
+  "source_checkpoint": "Pinned public S0 fresh full-uniform continuous2000; checkpoint u0500",
+  "expected_order": 0,
+  "comparison": "task/retreat/stability, not action or trajectory identity",
+  "status": "NONTARGET_VIOLATION",
+  "n_action_steps": 10,
+  "initial_physics_comparison_passed": true,
+  "gpu_peak_memory_bytes": 1125528576,
+  "policy_actions": 473,
+  "native_success": false,
+  "first_native_step": null,
+  "nontarget_preserved": false,
+  "strict_nontarget_preserved": false,
+  "legacy_clean": false,
+  "release_stability_pass": false,
+  "full_task_success": false,
+  "drawer_diagnostic": {
+    "joint_names": [
+      "wooden_cabinet_1_top_level",
+      "wooden_cabinet_1_middle_level",
+      "wooden_cabinet_1_bottom_level"
+    ],
+    "qpos_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "initial_qpos_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "max_abs_shift_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "within_3mm": true,
+    "primary_stop": false,
+    "teacher_input": false
+  },
+  "moving_lift": {
+    "rise_m": 3.731459585765151e-13,
+    "left_fingerpad": false,
+    "right_fingerpad": false,
+    "support_contacts": [
+      "table_collision"
+    ],
+    "qualifying_streak": 0,
+    "lift_confirmed": false,
+    "first_lift_step": null,
+    "measurement": "target root-body world z, not EEF or COM",
+    "target": "wine_bottle_1",
+    "reference_body_z_m": 0.8988754774199721,
+    "target_contact_other_geoms": [
+      "table_collision"
+    ],
+    "sampling": "20Hz signed-distance<=0 control states; substeps not inspected"
+  },
+  "first_moving_lift_step": null,
+  "first_lift_eef_downward_angle_deg": null,
+  "eef_angle_meaning": "acos(-R[2,2]) at first sustained lift; continuous controlled-site orientation, not grasp-part classification",
+  "teaching_material_candidate": false,
+  "human_quality_accepted": false,
+  "state_valid": true,
+  "policy_stop_reason": "NONTARGET_VIOLATION",
+  "recorded_actions": 473,
+  "recorded_states": 474,
+  "total_physics_including_selected_settle": 483,
+  "prior_reset_preparation_steps": 0,
+  "common_observation": null,
+  "video": {
+    "status": "S8_RECORDED_RGB_H264_ALL_FRAMES_DECODED",
+    "video": "/workspace/project-award/results/s22_gpu_run_v1/u0500_n10_init0/FULL_TASK_1X_20HZ_H264.mp4",
+    "sha256": "e57789119e12acb31f1e6fec3f175e51fa7d1ac67358bad5c9503d9d0f02fc12",
+    "frames": 474,
+    "fps": 20,
+    "duration_s": 23.7,
+    "initial_settle_steps_omitted": 10,
+    "policy_API_waits_omitted": true,
+    "common_observer_labels": true,
+    "display_transform": "raw vertically flipped once",
+    "recorded_physics_not_resimulation": true,
+    "faststart_requested": true,
+    "version": "S22_S0_FULL_UNIFORM_2000_V1",
+    "actor": "SmolVLA_S22_u0500_n10",
+    "observer": "S11 unchanged fixed100; may be noncandidate terminal fallback, no forced opening",
+    "recorder_guard_version": "S11_PERIODIC_NATIVE_V1",
+    "full_native_interval": 100,
+    "full_native_frames": [
+      0,
+      100,
+      200,
+      300,
+      400
+    ],
+    "per_boundary_guards": [
+      "mjSTATE_INTEGRATION",
+      "model_geometry",
+      "geometry",
+      "camera restoration"
+    ],
+    "final_repeat_check": {
+      "full_native_checked": true,
+      "scope": "final same-boundary repeated render; no action/frame appended",
+      "passed": true,
+      "proof": {
+        "native_state_exact": true,
+        "integration_exact": true,
+        "model_exact": true,
+        "geometry_exact": true,
+        "camera_restored": true
+      },
+      "RGB_equal_to_recorded_final": true,
+      "frame": 473
+    },
+    "recorder_integrity_pass": true,
+    "all_frames_decoded": true,
+    "lossless_observation_mode": "every control boundary",
+    "lossless_boundaries": 474,
+    "omitted_lossless_boundaries": 0,
+    "new_Gemini_calls": 0,
+    "new_training_updates": 0,
+    "diagnostic_teacher_replay": false
+  },
+  "policy_select_action_calls": 473,
+  "model_action_chunks": 48,
+  "expected_model_chunks": 48,
+  "elapsed_wall_s": 68.43624500720762,
+  "arm": "u0500",
+  "online_helper": false
+}

@@ -1,0 +1,22 @@
+{
+  "version": "S14C_VISUAL_CENTER_FOLLOWUP_V1",
+  "human_instruction": "Additional human instruction: Align the BOTTLE BASE and its intended contact point with the center of the cabinet top in BOTH horizontal directions. Do not confuse the bottle mouth, gripper position, or wrist-image center with the base contact point. The bottle is elevated, so perspective/parallax can make the mouth look centered while the base will land off-center. Compare the top's front/back/left/right boundaries using all three current views, especially the side view. Keep the upright top grasp, approach slowly near the surface, and reobserve in small downward moves. Aim to have the base gently supported by the top BEFORE opening, rather than opening over an air gap and dropping it. Then open fully and retreat upward while keeping XY and orientation. Use current visual evidence only; no target coordinates or scoring feedback are available.",
+  "shared_budget_profile": "configs/s14r_restart_v1.json",
+  "shared_ledger_phase": "S14R_CENTER_TEACHER_V1",
+  "new_out": "results/s14c_center_teacher_live_v1",
+  "expected_start": {
+    "generations": 216,
+    "counts": 216,
+    "known_usage_estimate_micro": 4682256,
+    "phase_generations": 8,
+    "phase_committed_micro": 137790
+  },
+  "remaining_pool_generations": 22,
+  "remaining_pool_micro": 862210,
+  "common_generation_cap": 238,
+  "common_money_cap_micro": 5890146,
+  "physics_changed": false,
+  "GT_teacher_input": false,
+  "new_GPU": 0,
+  "new_FT": 0
+}

@@ -1,0 +1,136 @@
+{
+  "version": "S4_FOUR_DEV_CELLS_V1",
+  "purpose": "fixed4 development cells under explicit receiver-contact profile; not pooled with S3",
+  "source_run": "results/s1_goal_completion_v4_high_live_goal9_init0_v1",
+  "source_trace_sha256": "3c77296c7659f2a1cacc0986c7b1f3549dbd980c55e7623f321bfb804b716a1e",
+  "budget_total": 600,
+  "settle_steps": 10,
+  "task": 9,
+  "init": 0,
+  "env_seed": 42,
+  "policy_seed": 42,
+  "device": "cuda",
+  "use_amp": false,
+  "model": {
+    "repo_id": "lerobot/smolvla_libero",
+    "revision": "a24f1f380461b665158d52acd140152c79e8b36d",
+    "expected_file_count": 9,
+    "expected_decimal_gb_rounded": 0.907,
+    "local_directory": "checkpoints/smolvla_libero"
+  },
+  "backbone": {
+    "repo_id": "HuggingFaceTB/SmolVLM2-500M-Video-Instruct",
+    "revision": "7b375e1b73b11138ff12fe22c8f2822d8fe03467",
+    "runtime_file_count": 12,
+    "runtime_bytes": 2034845165
+  },
+  "runtime": {
+    "lerobot": "0.6.1",
+    "hf-libero": "0.1.4",
+    "robosuite": "1.4.0",
+    "mujoco": "3.8.1",
+    "torch": "2.8.0+cu128",
+    "torchvision": "0.23.0+cu128",
+    "numpy": "2.2.6"
+  },
+  "libero_revision": "8f1084e3132a39270c3a13ebe37270a43ece2a01",
+  "dataset_download": false,
+  "extra_api": false,
+  "gpu": {
+    "first_choice": "NVIDIA GeForce RTX 4090",
+    "cloud": "SECURE",
+    "hourly_gpu_usd": 0.89,
+    "initial_wall_limit_s": 7200,
+    "initial_spend_limit_usd": 3,
+    "container_disk_gb": 50,
+    "volume_disk_gb": 0,
+    "image": "runpod/pytorch:1.0.2-cu1281-torch280-ubuntu2404"
+  },
+  "input": {
+    "cameras": [
+      "agentview_image",
+      "robot0_eye_in_hand_image"
+    ],
+    "height": 360,
+    "width": 360,
+    "state_dim": 8,
+    "model_state_dim": 32,
+    "image_padding": 512,
+    "rename_map": {
+      "observation.images.image": "observation.images.camera1",
+      "observation.images.image2": "observation.images.camera2"
+    }
+  },
+  "cell_order": [
+    "solo_n10",
+    "solo_n50",
+    "prefix204_n10",
+    "prefix204_n50"
+  ],
+  "cells": [
+    {
+      "id": "solo_n10",
+      "prefix": false,
+      "n_action_steps": 10,
+      "teacher_steps": 0,
+      "hold_steps": 0,
+      "student_steps": 590,
+      "teacher_hold_gate": "N/A"
+    },
+    {
+      "id": "solo_n50",
+      "prefix": false,
+      "n_action_steps": 50,
+      "teacher_steps": 0,
+      "hold_steps": 0,
+      "student_steps": 590,
+      "teacher_hold_gate": "N/A"
+    },
+    {
+      "id": "prefix204_n10",
+      "prefix": true,
+      "n_action_steps": 10,
+      "teacher_steps": 194,
+      "hold_steps": 10,
+      "student_steps": 386,
+      "teacher_hold_gate": "actual Linux hold/NT/legacy"
+    },
+    {
+      "id": "prefix204_n50",
+      "prefix": true,
+      "n_action_steps": 50,
+      "teacher_steps": 194,
+      "hold_steps": 10,
+      "student_steps": 386,
+      "teacher_hold_gate": "actual Linux hold/NT/legacy"
+    }
+  ],
+  "prior_s2_reference": {
+    "path": "results/s2_student_handoff_smoke_goal9_init0_v1_env_retry1/RESULT.json",
+    "sha256": "35e741776f418122ee6864bdab2dafb9ed9795d92803d84648af0d88a42761e3",
+    "pooled": false
+  },
+  "new_online_teacher_generations": 0,
+  "per_cell_wall_limit_s": 900,
+  "wall_control": "external creation+100min work cutoff; creation+120min termination; <=60s polls",
+  "supplemental_dependencies": {
+    "typing-extensions": "4.16.0",
+    "tzdata": "2026.2"
+  },
+  "prior_s3_reference": {
+    "path": "results/s3_four_dev_cells_goal9_init0_v1/COMPARISON.json",
+    "sha256": "4e6d611b33e03fc3ca732b5edb8cff5f2c776abb8acf8a9dec6070d740b86b46",
+    "pooled": false
+  },
+  "evaluation_profile": {
+    "version": "S4_RECEIVER_CONTACT_V1",
+    "target_object": "wine_bottle_1",
+    "receiver_object": "wine_rack_1",
+    "receiver_robot_contact": "record_only",
+    "receiver_translation_limit_mm": 3.0,
+    "tilt_limit_deg": 3.0,
+    "other_translation_limit_mm": 1.0,
+    "other_robot_contact": "stop",
+    "strict_diagnostic": "S3_NONTARGET_STRICT_CONTACT"
+  }
+}

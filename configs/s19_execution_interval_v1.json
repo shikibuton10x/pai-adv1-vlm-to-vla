@@ -1,0 +1,45 @@
+{
+  "version": "S19_EXECUTION_INTERVAL_V1",
+  "contract": "docs/S19_EXECUTION_INTERVAL_CONTRACT.md",
+  "order": [
+    "S0_n10_init0",
+    "B_n10_init0"
+  ],
+  "task_id": 2,
+  "init": 0,
+  "policy_seed": 42,
+  "n_action_steps": 10,
+  "chunk_size": 50,
+  "denoise_steps": 10,
+  "policy_step_cap": 1180,
+  "observer_steps": 100,
+  "settle_steps": 10,
+  "new_training": 0,
+  "new_Gemini_calls": 0,
+  "source_B": {
+    "repo_id": "YOUR_ACCOUNT/PRIVATE_ARCHIVE",
+    "revision": "a0c7806c6b87a00c6d190f5f62c58a545e5b8a3b",
+    "archive_file": "S18_RESULTS_3290.tar.gz",
+    "archive_sha256": "8853dae19681850eb280b8ba3585c925f76f6792d2c205b102bfff0af2adba2a",
+    "archive_bytes": 3441328177,
+    "selected_manifest": "fixtures/s19/S18_B_SELECTED_MANIFEST.json",
+    "weight_sha256": "f8a0f0ddf21f3313f448ae93df8c2b047bcfc245450778c418dfd760a415941d"
+  },
+  "original_dtype_map": "fixtures/s19/ORIGINAL_MIXED_DTYPES.json",
+  "resource": {
+    "max_minutes": 90,
+    "work_minutes": 60,
+    "recovery_minutes": 30,
+    "USD_cap": 2,
+    "cell_timeout_s": 900,
+    "guard_minutes": 88,
+    "mac_return_cap_bytes": 150000000,
+    "max_code_payload_bytes": 30000000
+  },
+  "hf_output_repo": "YOUR_ACCOUNT/PRIVATE_ARCHIVE",
+  "prior_GPU_estimate_USD": 5.980475209086111,
+  "old_n50_videos": {
+    "S0": "results/s18_gpu_run_v1/S0_init0/FULL_TASK_1X_20HZ_H264.mp4",
+    "B": "results/s18_gpu_run_v1/B_init0/FULL_TASK_1X_20HZ_H264.mp4"
+  }
+}

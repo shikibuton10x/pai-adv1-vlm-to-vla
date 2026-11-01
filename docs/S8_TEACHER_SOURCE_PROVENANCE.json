@@ -1,0 +1,58 @@
+{
+  "version": "S8_TEACHER_SOURCE_V1",
+  "task": {
+    "suite": "libero_goal",
+    "index": 2,
+    "name": "put_the_wine_bottle_on_top_of_the_cabinet"
+  },
+  "derived": {
+    "src/course_award/receiver_contact_v1.py": {
+      "sha256": "7bb2e57df2046f4546a717e8c4c5714da95fba13caf152887ee3cb37fc5583da",
+      "scope": "cabinet-only new profile, same pose guard, old rack profile unchanged"
+    },
+    "src/course_award/recovery_episode_s6.py": {
+      "sha256": "bc5feb118d30e0c168e6f9131f313086761f29b201ff18a732cb29748c1b8f1a",
+      "scope": "reuse observe/save, replace monitor constructor and add drawer diagnostics"
+    },
+    "src/course_award/full_task_recording_s7.py": {
+      "sha256": "9c20ce320d7b4fb0a2b810ce6422bd1831612e69112bd58c0fa86f7520e59ed1",
+      "scope": "reuse N+1 builder and sensor timing/source metadata, S8 actor captions/portable video export"
+    },
+    "src/course_award/goal_completion_v4.py": {
+      "sha256": "8571218f5660914bea0c13986682be5c0c00cea7d2ab9780e35affdcd7d8c91f",
+      "scope": "unchanged servo and parsing;950 policy step cap"
+    },
+    "src/course_award/full_task_s7.py": {
+      "sha256": "7548026e65e4aa2e8a009aeaa9a6dcbebb3f290fff23cef12b1fe4b882967926",
+      "scope": "reuse ReleaseAudit for fixed latter21 states; single40 observation, no replanning"
+    },
+    "src/course_award/full_task_medium_s7.py": {
+      "sha256": "d7f716ad4ebb76e9f70c754885258d877e62387010283479d95c61fb1240222d",
+      "scope": "unchanged MEDIUM32768 transport/client"
+    },
+    "src/course_award/recovery_budget_s6.py": {
+      "sha256": "4ad7ed1349a3ba5e7afecfa032ae377b26b157fcd1b3691ac73b09c7cf5c05ad",
+      "scope": "unchanged no-retry/count/usage settlement"
+    }
+  },
+  "old_sources_modified": false,
+  "new_files": [
+    "configs/local_assets_s8.json",
+    "configs/s8_cabinet_comparison_v1.json",
+    "fixtures/s8_g1/libero_goal_a10/trace/task_02_episode_000.npz",
+    "fixtures/s8_g1/libero_goal_a10/trace/task_02_episode_000_metadata.json",
+    "fixtures/s8_g1/libero_goal_a10/trace/task_02_episode_001.npz",
+    "fixtures/s8_g1/libero_goal_a10/trace/task_02_episode_001_metadata.json",
+    "fixtures/s8_g1/libero_goal_a10/trace/task_02_episode_002.npz",
+    "fixtures/s8_g1/libero_goal_a10/trace/task_02_episode_002_metadata.json",
+    "scripts/launch_s8_teacher.py",
+    "scripts/run_s8_teacher.py",
+    "src/course_award/cabinet_quality_s8.py",
+    "src/course_award/cabinet_recording_s8.py",
+    "src/course_award/cabinet_s8.py",
+    "src/course_award/cabinet_teacher_s8.py",
+    "tests/test_cabinet_s8.py"
+  ],
+  "public_libero_license": "MIT (existing licenses preserved); project-internal experiment code reused under user authorization; no new license asserted for private G1",
+  "g1_reference": "docs/S8_G1_REFERENCE_PROVENANCE.json"
+}

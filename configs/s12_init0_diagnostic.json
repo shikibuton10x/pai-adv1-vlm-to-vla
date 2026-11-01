@@ -1,0 +1,51 @@
+{
+  "version": "S12_TRAIN_INIT0_DIAGNOSTIC_V1",
+  "contract": "docs/S12_INIT0_DIAGNOSTIC_CONTRACT.md",
+  "fixed_order": [
+    "SM_init0",
+    "saved_teacher_1032_replay"
+  ],
+  "suite": "libero_goal",
+  "task_index": 2,
+  "init": 0,
+  "base_env_seed": 42,
+  "selected_env_seed": 42,
+  "policy_seed": 42,
+  "n_action_steps": 50,
+  "selected_settle_steps": 10,
+  "prior_preparation_steps": 0,
+  "student_policy_cap": 1180,
+  "teacher_saved_actions": 1032,
+  "common_observer_steps": 100,
+  "checkpoint": "results/s11_gpu_run_v3/train/final",
+  "checkpoint_weight_sha256": "ea4132f9786a10d4717780c0bf1d3c3a65c361c8ae3771ba977c3f879e998c97",
+  "new_API_calls": 0,
+  "training_updates": 0,
+  "replay_lossless_frames": [
+    0,
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900,
+    1000,
+    1032,
+    1052,
+    1132
+  ],
+  "replay_lossless_final_always": true,
+  "recording_guard": "S11 fast: per-boundary integration/model_geometry/geometry/camera; full native initial/every100/final",
+  "resource": {
+    "max_minutes": 90,
+    "max_USD": 2,
+    "compute_minutes": 70,
+    "recovery_minutes": 20,
+    "cell_timeout_s": 900,
+    "poll_s": 30
+  },
+  "scope": "train-init0 task reproduction, not identical predicted actions; fixed open-loop teacher replay is a platform diagnostic, not new AI generation"
+}

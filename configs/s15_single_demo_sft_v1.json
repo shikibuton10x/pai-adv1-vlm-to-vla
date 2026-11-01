@@ -1,0 +1,79 @@
+{
+  "version": "S15_SINGLE_ACCEPTED_DEMO_SFT_V1",
+  "contract": "docs/S15_ACCEPTED_DEMO_SFT_CONTRACT.md",
+  "data": {
+    "fps": 20,
+    "chunk_size": 50,
+    "anchors": 1028,
+    "episodes": [
+      {
+        "id": "S14D",
+        "start": 0,
+        "end": 1028
+      }
+    ],
+    "uniform_anchor_seed": 42
+  },
+  "train": {
+    "seed": 42,
+    "updates": 500,
+    "effective_batch_size": 16,
+    "learning_rate": 2e-05,
+    "final_learning_rate": 2e-06,
+    "warmup_updates": 50,
+    "microbatch_candidates": [
+      4
+    ],
+    "gradient_clip_norm": 10,
+    "adam_betas": [
+      0.9,
+      0.95
+    ],
+    "adam_eps": 1e-08,
+    "weight_decay": 1e-10,
+    "freeze_vision_encoder": true,
+    "train_expert_only": true,
+    "train_state_proj": true,
+    "use_amp": false,
+    "save_final_only": true,
+    "image_augmentation": false
+  },
+  "evaluation": {
+    "suite": "libero_goal",
+    "task_id": 2,
+    "task_name": "put_the_wine_bottle_on_top_of_the_cabinet",
+    "models": [
+      "S15"
+    ],
+    "inits": [
+      0
+    ],
+    "policy_seed": 42,
+    "base_env_seed": 42,
+    "n_action_steps": 50,
+    "policy_step_cap": 1180,
+    "observation_steps": 100,
+    "selected_settle_steps": 10,
+    "relative_retreat_m": 0.05,
+    "root_distance_nondecrease_tolerance_m": 1e-06,
+    "open_gap_m": 0.07,
+    "upright_deg": 5,
+    "position_drift_m": 0.001,
+    "SO3_drift_deg": 3
+  },
+  "resource": {
+    "new_API": 0,
+    "max_pod_hours": 1.5,
+    "max_pod_USD": 2,
+    "work_minutes": 70,
+    "recovery_minutes": 20,
+    "cell_timeout_s": 900,
+    "poll_s": 30
+  },
+  "fixed_order": [
+    "teacher_1028_replay",
+    "GPU_parity_micro4_smoke_discard",
+    "S0_fresh_500updates",
+    "S15_init0"
+  ]
+}

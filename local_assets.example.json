@@ -1,0 +1,5 @@
+{
+  "project_root": "/ABSOLUTE/PATH/TO/THIS/REPO",
+  "libero_root": "/ABSOLUTE/PATH/TO/LIBERO",
+  "g1_root": "/ABSOLUTE/PATH/TO/INITIAL_GEOMETRY_REFERENCE"
+}

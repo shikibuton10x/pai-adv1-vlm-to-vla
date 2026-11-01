@@ -1,0 +1,27 @@
+{
+  "version": "S1_NONTARGET_V2",
+  "task_index": 9,
+  "initial_state_index": 0,
+  "seed": 42,
+  "preparation_steps": 10,
+  "teacher_step_cap": 380,
+  "automatic_hold_steps": 10,
+  "total_physics_cap": 400,
+  "additional_generations": 20,
+  "common_generation_cap": 58,
+  "common_money_cap_micro": 2000000,
+  "input_token_cap": 8000,
+  "thinking_plus_visible_cap": 4096,
+  "thinking_level": "MEDIUM",
+  "http_timeout_s": 90,
+  "target_exclusion": "constant",
+  "retention_states": 11,
+  "retention_duration_s": 0.5,
+  "hand_interrupt": "robot-environment hand false-to-true on move/rotate; state updated every step",
+  "current_cameras": [
+    "agentview",
+    "robot0_eye_in_hand",
+    "sideview"
+  ],
+  "history_seed": "empty_current_episode"
+}

@@ -1,0 +1,32 @@
+{
+  "version": "S16_HEIGHT_ONLY_DIAGNOSTIC_V1",
+  "contract": "docs/S16_CARRY_HEIGHT_DIAGNOSTIC_CONTRACT.md",
+  "start_boundary": 500,
+  "first_assisted_action_1based": 501,
+  "target_clearance_m": 0.067,
+  "Z_physical_delta_cap_m": 0.004,
+  "return_center_tolerance_m": 0.03,
+  "max_assisted_actions": 680,
+  "end_on_first_g9_contact": true,
+  "end_on_bilateral_pad_loss": true,
+  "end_on_raw_open": false,
+  "policy_cap": 1180,
+  "terminal_observation_steps": 100,
+  "n_action_steps": 50,
+  "policy_seed": 42,
+  "new_API": 0,
+  "new_training": 0,
+  "fixed_cells": 1,
+  "checkpoint": "results/s15_gpu_run_v1/train/final",
+  "checkpoint_sha256": "f2b1e4d136670f1cd001bd5da6a2e366280542200c1bd49e95a0d3cbf2eed618",
+  "resource": {
+    "max_minutes": 45,
+    "compute_minutes": 30,
+    "recovery_minutes": 15,
+    "max_USD": 1,
+    "cell_timeout_s": 900,
+    "preferred_datacenter": "EUR-IS-2",
+    "independent_delete_guard_minute": 43
+  },
+  "transfer_authorization": "General current/future course-experiment permission; S15 package-specific permission does NOT itself identify this S16 package. Stop on approval rejection, no alternate route."
+}

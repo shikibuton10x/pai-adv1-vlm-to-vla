@@ -1,0 +1,17 @@
+{
+  "variant": "S1_SIDE_ROBOT_CARD_V1",
+  "history_operations": 4,
+  "additional_generation_cap": 12,
+  "common_generation_cap": 32,
+  "common_money_cap_usd": 1.5,
+  "input_cap": 8000,
+  "thinking_plus_visible_cap": 4096,
+  "thinking_level": "MEDIUM",
+  "http_timeout_s": 90,
+  "current_cameras": [
+    "agentview",
+    "robot0_eye_in_hand",
+    "sideview"
+  ],
+  "past_reference": false
+}

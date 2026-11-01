@@ -1,0 +1,40 @@
+{
+  "version": "S10_CORRECTION_PILOT_V1",
+  "source_run": "results/s8_runpod_lifecycle_v1/recovered/results/s8_student_goal2_init0_v1",
+  "prefix_actions": 20,
+  "prefix_states": 21,
+  "placement_step_cap": 1000,
+  "retreat_step_cap": 160,
+  "terminal_observation_steps": 100,
+  "maximum_including_settle": 1290,
+  "model": "gemini-4-argon",
+  "thinking_level": "MEDIUM",
+  "input_cap": 9000,
+  "output_cap": 32768,
+  "http_timeout_s": 900,
+  "outer_timeout_s": 2700,
+  "finish_reserve_s": 120,
+  "generation_cap": 24,
+  "phase_money_cap_micro": 1500000,
+  "common_generation_cap": 202,
+  "project_money_cap_micro": 10000000,
+  "ledger_baseline_bytes": 187204,
+  "ledger_baseline_sha256": "f0cb75f05459b927bb79cea20319867e38fcd27f7e0bdc283919aaf3c82ca99a",
+  "ledger_baseline_generations": 178,
+  "ledger_baseline_cost_micro": 3942570,
+  "source_hashes": {
+    "RESULT.json": "2efe701830916e6beab454aa4809db3806c046edbc268940a07f83ab341de67f",
+    "trace.npz": "c1334e2571e6316224688d08317425a30236b91a6dacb75b2701fae882c6e283",
+    "steps.jsonl": "2f2196b378b274d0febfea517d986eb1b547755f6e015dc3cb010b09b1a6e664",
+    "INITIAL_IDENTITY.json": "4ca91964fd062a7eebd66699c905d0b44b7de6687fd10eec51a4b51f53b166c1",
+    "BOUNDARY_INDEX.jsonl": "458f3b17a5ce9ebbc56bc1e5b37c2597947979e40a208b5bdc69c6e02af9eb47",
+    "FULL_TASK_1X_20HZ_H264.mp4": "dd8c932c18ef01821d5a7556e416163d58b28e610b9747674d0b637a1f210feb"
+  },
+  "prefix_tolerances": {
+    "position_m": 1e-06,
+    "orientation_rad": 1e-06,
+    "arm_joint_rad": 1e-06,
+    "velocity_component": 0.0001,
+    "time_s": 1e-09
+  }
+}

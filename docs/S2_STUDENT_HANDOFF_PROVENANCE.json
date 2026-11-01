@@ -1,0 +1,40 @@
+{
+  "sources": [
+    {
+      "path": "LOCAL_PATH_REQUIRED/measurement_stack.py",
+      "sha256": "347e48f68fba471ac48ba2ec44620b624c4a4ee6b3e960ab3de82457feec9f58",
+      "license": "Apache-2.0; LeRobot/MeasurementStack source reference"
+    },
+    {
+      "path": "LOCAL_PATH_REQUIRED/stage1_sources.json",
+      "sha256": "1db089595ecefe9e0f362671026ac5cd99efa1e6b8c6ac6b1c750e31289faed0",
+      "license": "Apache-2.0; LeRobot/MeasurementStack source reference"
+    },
+    {
+      "path": "LOCAL_PATH_REQUIRED/libero.py",
+      "sha256": "97c984f12331527626812ec19967ef399e545535b3571becf044db2417ae9d71",
+      "license": "Apache-2.0; LeRobot/MeasurementStack source reference"
+    }
+  ],
+  "changes": "MeasurementStack source copied exactly; __init__ bypassed solely to prevent new environment creation. Its unchanged action pipeline and pinned official raw formatter are used. Boundary instrumentation records first 8D/32D input and raw 7D. No Goal6/fixed300/old scoring imported.",
+  "copied_exact_measurement_stack": "src/course_award/vendor/measurement_stack.py",
+  "runtime_lock": {
+    "source": "LOCAL_PATH_REQUIRED/resolved_requirements.txt",
+    "sha256": "03e1aa4f91e772bc5b045f201facb63113f6ee01b91c9c3227445f6344a2f3b6"
+  },
+  "fixture_sources": [
+    {
+      "source": "LOCAL_PATH_REQUIRED/task_09_episode_000.npz",
+      "sha256": "bcf29cad470acb84f20aeaebd2cd8f7fdd1be5b9d71adee37da0351112393078"
+    },
+    {
+      "source": "LOCAL_PATH_REQUIRED/task_09_episode_000_metadata.json",
+      "sha256": "f4c8567906a72e3fbc6dbfa3bf0d764f8791a3dbc5f345a63726959c7e289977"
+    }
+  ],
+  "acquisition_reference": {
+    "path": "LOCAL_PATH_REQUIRED/acquire_sources.py",
+    "sha256": "70ee0d1043665c1860c697a1d3a178b7932c09ed43d8903ecc0ba55e65b4551f",
+    "changes": "New S2-only subset: policy/backbone/LIBERO receipts with SHA, no dataset/CALL repo. Not executed."
+  }
+}

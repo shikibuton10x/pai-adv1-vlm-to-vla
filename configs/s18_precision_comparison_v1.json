@@ -1,0 +1,197 @@
+{
+  "version": "S18_PRECISION_COMPARISON_V1",
+  "contract": "docs/S18_PRECISION_COMPARISON_CONTRACT.md",
+  "data": {
+    "fps": 20,
+    "chunk_size": 50,
+    "anchors": 1028,
+    "episodes": [
+      {
+        "id": "S14D",
+        "start": 0,
+        "end": 1028
+      }
+    ],
+    "uniform_anchor_seed": 42
+  },
+  "train": {
+    "seed": 42,
+    "updates": 500,
+    "effective_batch_size": 16,
+    "learning_rate": 1e-05,
+    "final_learning_rate": 1e-06,
+    "warmup_updates": 50,
+    "microbatch_candidates": [
+      4
+    ],
+    "gradient_clip_norm": 10,
+    "adam_betas": [
+      0.9,
+      0.95
+    ],
+    "adam_eps": 1e-08,
+    "weight_decay": 1e-10,
+    "freeze_vision_encoder": true,
+    "train_expert_only": true,
+    "train_state_proj": true,
+    "use_amp": true,
+    "save_final_only": true,
+    "image_augmentation": false,
+    "optimizer_state_reused": false,
+    "source_reload_after_smoke": true,
+    "microbatch": 4,
+    "accumulation": 4,
+    "autocast": "cuda_bfloat16 shared A/B"
+  },
+  "evaluation": {
+    "suite": "libero_goal",
+    "task_id": 2,
+    "task_name": "put_the_wine_bottle_on_top_of_the_cabinet",
+    "models": [
+      "S0",
+      "A",
+      "B"
+    ],
+    "inits": [
+      0
+    ],
+    "policy_seed": 42,
+    "base_env_seed": 42,
+    "n_action_steps": 50,
+    "policy_step_cap": 1180,
+    "observation_steps": 100,
+    "selected_settle_steps": 10,
+    "relative_retreat_m": 0.05,
+    "root_distance_nondecrease_tolerance_m": 1e-06,
+    "open_gap_m": 0.07,
+    "upright_deg": 5,
+    "position_drift_m": 0.001,
+    "SO3_drift_deg": 3
+  },
+  "resource": {
+    "new_API": 0,
+    "max_pod_hours": 2.5,
+    "max_pod_USD": 5,
+    "work_minutes": 120,
+    "recovery_minutes": 30,
+    "cell_timeout_s": 900,
+    "poll_s": 30,
+    "evaluation_reserved_s": 1800,
+    "training_command_cap_s": 1800,
+    "stage_save_margin_s": 180,
+    "independent_guard_minutes": 148,
+    "absolute_termination_UTC": "2026-11-01T20:00:00Z"
+  },
+  "fixed_order": [
+    "probe_A_discard",
+    "probe_B_discard",
+    "reload_f2_train_A500",
+    "reload_f2_train_B500",
+    "decoded_S0_S15_A_B",
+    "S0_init0",
+    "A_init0",
+    "B_init0"
+  ],
+  "source_checkpoint": {
+    "path": "results/s15_gpu_run_v1/train/final",
+    "files": {
+      "config.json": "a1869117a8f87c3adbff0818c57f2cf85d828e88c5339a9cd546ec0234d4d7de",
+      "model.safetensors": "f2b1e4d136670f1cd001bd5da6a2e366280542200c1bd49e95a0d3cbf2eed618",
+      "policy_preprocessor.json": "7beef33479fc22c9a45670154b3c7b909fb6d51dac3cd6db6f23376638b4ac11",
+      "policy_postprocessor.json": "3b51f092c70c710ce0213ee1b63bf51b4878ec67828dd2d67daf9ef51081a41a",
+      "policy_preprocessor_step_5_normalizer_processor.safetensors": "b0cdde6e8a6f49a8e19eefb376728e47c09d3b3cc20ce3a97c45619fe7a732d9",
+      "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "b0cdde6e8a6f49a8e19eefb376728e47c09d3b3cc20ce3a97c45619fe7a732d9"
+    },
+    "prior_nominal_updates": 500,
+    "optimizer": "new AdamW; no prior moments loaded"
+  },
+  "sampling": {
+    "whole_pre_anchor_range_halfopen": [
+      0,
+      1028
+    ],
+    "focus_pre_anchor_range_halfopen": [
+      204,
+      907
+    ],
+    "whole_per_effective_batch": 8,
+    "focus_per_effective_batch": 8,
+    "shuffle_mixed_batch": true,
+    "focus_definition": "pre204 before lift action205 through pre906 before firstg9 contact907; not all states maintain67mm",
+    "focus_has_original_future_chunk": true,
+    "all_seven_original_action_dimensions": true
+  },
+  "precision": {
+    "arms": [
+      "A",
+      "B"
+    ],
+    "probe_updates": 20,
+    "probe_lr": 1e-05,
+    "probe_batch": [
+      0,
+      128,
+      350,
+      799,
+      906,
+      943,
+      963,
+      1027,
+      0,
+      128,
+      350,
+      799,
+      906,
+      943,
+      963,
+      1027
+    ],
+    "promotion": "requires_grad and original dtype BF16 only",
+    "common_inference": "original S15 mixed dtype",
+    "initial_numeric_hash_dtype": "F32",
+    "effect_size_not_stop_gate": true
+  },
+  "decoded": {
+    "models": [
+      "S0",
+      "S15",
+      "A",
+      "B"
+    ],
+    "anchors": [
+      0,
+      128,
+      203,
+      232,
+      350,
+      799,
+      906,
+      943,
+      963,
+      1027
+    ],
+    "noise_seeds": [
+      18001,
+      18002,
+      18003,
+      18004
+    ],
+    "horizons": [
+      1,
+      10,
+      50
+    ],
+    "phase_by_anchor": {
+      "0": "initial",
+      "128": "approach",
+      "203": "close_end",
+      "232": "sustained_lift",
+      "350": "lift_carry",
+      "799": "pre_approach_lower",
+      "906": "pre_first_g9",
+      "943": "pre_open",
+      "963": "pre_retreat",
+      "1027": "retreat_end"
+    }
+  }
+}
